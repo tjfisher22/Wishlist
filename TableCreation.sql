@@ -13,7 +13,7 @@ CREATE TABLE Persons (
 	GroupID int FOREIGN KEY REFERENCES Groups(GroupID)
 )
 
-CREATE TABLE GiftPictures(
+CREATE TABLE PresentsPictures(
 	PictureID int PRIMARY KEY,
 	PresentID int FOREIGN KEY REFERENCES Presents(PresentID),
 	Picture VARCHAR(255) NOT NULL

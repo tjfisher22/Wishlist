@@ -23,5 +23,7 @@ CREATE TABLE Groups(
 	GroupID int IDENTITY(1,1) PRIMARY KEY,
 	GroupName varchar(20),
 	GroupDescription varchar(255),
-	GroupNumber int NOT NULL
+	GroupNumber int NOT NULL UNIQUE
 )
+
+
